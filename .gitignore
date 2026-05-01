@@ -1,0 +1,9 @@
+# Tránh lộ key bảo mật
+.streamlit/secrets.toml
+backend/app/core/serviceAccountKey.json
+.env
+
+# File rác Python
+__pycache__/
+*.pyc
+.venv/
