@@ -80,4 +80,4 @@ Họ và tên: Hồ Tất Thành
 
 Đồ án: Xây dựng API và tích hợp Firebase cho ứng dụng quản lý chi tiêu.
 ## 📺 Demo Video
-**Đường dẫn xem Video Demo:** [👉 ]
+**Đường dẫn xem Video Demo:** [https://github.com/hotatthanh0906-jpg/API-and-FIREBASE/blob/main/demo%20project%20api_firebase.mp4 ]
