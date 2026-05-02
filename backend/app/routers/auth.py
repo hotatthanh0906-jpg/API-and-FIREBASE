@@ -30,3 +30,12 @@ async def register(data: LoginRequest):
         detail = res.json().get("error", {}).get("message", "Đăng ký thất bại")
         raise HTTPException(status_code=400, detail=detail)
     return {"message": "Thành công"}
+
+@router.get("/me")
+def get_current_user(token: str):
+    """
+    Endpoint này dùng để lấy thông tin người dùng từ token 
+    để hiển thị lên Frontend sau khi đăng nhập.
+    """
+    # Logic xác thực token và trả về thông tin user
+    return {"user_id": "ID_nguoi_dung", "email": "email@example.com"}

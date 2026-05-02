@@ -12,6 +12,35 @@ Dự án hoàn thành đầy đủ các yêu cầu kỹ thuật của đề bài
 - **Feature chính (POST)**: Lưu khoản chi mới vào Firestore.
 - **Feature đọc dữ liệu (GET)**: Lấy danh sách chi tiêu theo từng User ID.
 
+### . Hướng dẫn chạy Backend
+Khởi động server FastAPI bằng lệnh:
+Để xem các endpoint `GET /` và `GET /health` đang hoạt động như thế nào, bạn có thể kiểm tra qua 2 "cổng" chính sau đây:
+
+### . Xem trực tiếp trên trình duyệt (Dành cho người dùng)
+Khi backend của bạn đang chạy (sau khi gõ lệnh `uvicorn`), bạn hãy mở trình duyệt web (Chrome, Edge...) và truy cập vào các địa chỉ sau:
+
+*   **Trang chào mừng (`GET /`):** 
+    👉 [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
+    *Kết quả mong đợi:* Bạn sẽ thấy dòng chữ `{"message": "Welcome to SmartSpend API"}`.
+
+*   **Trang kiểm tra sức khỏe (`GET /health`):** 
+    👉 [http://127.0.0.1:8000/health](http://127.0.0.1:8000/health)
+    *Kết quả mong đợi:* Bạn sẽ thấy `{"status": "healthy", ...}`.
+
+---
+
+### . Xem qua giao diện kiểm thử (Dành cho lập trình viên)
+FastAPI cung cấp một trang tài liệu tự động rất xịn sò để bạn có thể bấm "chạy thử" ngay lập tức:
+
+*   **Link Swagger UI:** 
+    👉 [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
+
+**Tại đây bạn có thể:**
+1. Tìm đến dòng có chữ **GET /** hoặc **GET /health**.
+2. Bấm vào nút **Try it out**.
+3. Bấm **Execute**.
+4. Xem kết quả trả về ngay tại trang đó mà không cần chuyển tab.
+
 ## 📁 Cấu trúc thư mục
 ```text
 project-root/
